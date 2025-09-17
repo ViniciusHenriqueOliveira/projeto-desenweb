@@ -5,13 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato - Minecraft FanSite</title>
 
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-
-    <!-- CSS Externo -->
+    
     <link rel="stylesheet" href="style.css">
 
-    <!-- CSS Interno para o formulário -->
     <style>
         form {
             max-width: 600px;
@@ -62,7 +59,6 @@
     </style>
 </head>
 <body>
-    <!-- HEADER -->
     <header>
         <h1 style="color: #FF4500;">Contato</h1> <!-- CSS Inline -->
         <nav>
@@ -77,23 +73,18 @@
         </nav>
     </header>
 
-    <!-- SECTION com formulário -->
     <section>
         <h2 style="text-align:center;">Fale Conosco</h2>
         <form action="#" method="get">
-            <!-- Campo texto -->
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required minlength="3">
 
-            <!-- Campo email -->
             <label for="email">E-mail:</label>
             <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
-
-            <!-- Campo telefone -->
+            
             <label for="telefone">Telefone:</label>
             <input type="tel" id="telefone" name="telefone" required>
 
-            <!-- Select -->
             <label for="assunto">Assunto:</label>
             <select id="assunto" name="assunto" required>
                 <option value="">Selecione...</option>
@@ -111,7 +102,6 @@
                 <label for="nao">Não</label>
             </div>
 
-            <!-- Checkbox -->
             <p>Plataformas que você joga:</p>
             <div class="checkbox-group">
                 <input type="checkbox" id="pc" name="plataforma" value="pc">
@@ -124,11 +114,9 @@
                 <label for="mobile">Mobile</label>
             </div>
 
-            <!-- Textarea -->
             <label for="mensagem">Mensagem:</label>
             <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem..." required minlength="10"></textarea>
 
-            <!-- Botões -->
             <div class="botoes">
                 <button type="submit">Enviar</button>
                 <button type="reset">Limpar</button>
@@ -136,9 +124,9 @@
         </form>
     </section>
 
-    <!-- FOOTER -->
     <footer>
         <p>&copy; 2025 Minecraft FanSite - Projeto acadêmico</p>
     </footer>
 </body>
 </html>
+
