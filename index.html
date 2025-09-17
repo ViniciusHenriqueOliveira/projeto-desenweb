@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft FanSite - Home</title>
+
+    <!-- Google Fonts (tipografia estilo pixel) -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- CSS Interno (regras específicas da Home) -->
+    <style>
+        /* Demonstração de CSS interno */
+        .welcome {
+            background: linear-gradient(to right, #4CAF50, #2E7D32);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        /* Section de imagens após novidades */
+        .novidades-imagens {
+            display: flex; /* Uso de flexbox */
+            justify-content: center;
+            gap: 20px;
+            margin: 20px;
+        }
+
+        .novidades-imagens img {
+            width: 200px;
+            border-radius: 10px;
+            border: 2px solid #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER com uso semântico -->
+    <header>
+        <h1 style="color: #4CAF50;">Minecraft FanSite</h1> <!-- CSS Inline aplicado -->
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Jogos</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SECTION principal -->
+    <section class="welcome">
+        <!-- Imagem antes do Bem-vindo -->
+        <img src="https://preview.redd.it/new-minecraft-art-cover-what-do-you-think-v0-jncj9eqr9bad1.jpeg?width=640&crop=smart&auto=webp&s=94f13596f6594107a14ea76e7dbd9a7539a683b5" alt="Minecraft Mundo" width="500" style="border-radius:10px; margin-bottom:20px;">
+        <!-- Texto de boas-vindas -->
+        <h2>Bem-vindo ao mundo do Minecraft!</h2>
+        <p>Este é um site fictício inspirado no <a href="https://www.minecraft.net/pt-br"><strong>Minecraft.net</strong></a>, feito como projeto de estudo de HTML5 e CSS3.</p>
+    </section>
+
+    <!-- Uso de ARTICLE para conteúdo -->
+    <article>
+        <h3>Novidades</h3>
+        <p>Fique por dentro das últimas versões do jogo, com patches recheados de novidades e novos desafios para serem enfrentados.</p>
+    </article>
+
+    <!-- Section com 3 imagens e texto sobreposto no topo -->
+    <section class="novidades-imagens">
+        <a target="_blank" href="https://pt.minecraft.wiki/w/Edi%C3%A7%C3%A3o_Java_1.21.9" class="card">
+            <img src="https://cdn.mos.cms.futurecdn.net/LjpABGhN9snndziLKxbrRb.png" alt="The copper age">
+            <h4>The Copper Age: 1.21.9</h4>
+        </a>
+
+        <a target="_blank" href="https://pt.minecraft.wiki/w/Edi%C3%A7%C3%A3o_Java_1.21.6" class="card">
+            <img src="https://i.scdn.co/image/ab67616d0000b273eddd81395225e6f5c4529fb8" alt="Chase the skies">
+            <h4>Chase the Skies: 1.21.6</h4>
+        </a>
+
+        <a target="_blank" href="https://pt.minecraft.wiki/w/Edi%C3%A7%C3%A3o_Java_1.21.5" class="card">
+            <img src="https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co9kqf.jpg" alt="Spring to life">
+            <h4>Spring to Life: 1.21.5</h4>
+        </a>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Minecraft FanSite - Projeto acadêmico</p>
+    </footer>
+</body>
+</html>

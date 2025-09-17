@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos Minecraft - Minecraft FanSite</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- CSS Interno (regras específicas desta página) -->
+    <style>
+        .jogos {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Demonstração de Grid Layout */
+            gap: 20px;
+            margin: 20px;
+        }
+
+        .jogo {
+            background: #333;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            border: 2px solid #4CAF50;
+        }
+
+        .jogo img {
+            width: 150px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <h1 style="color: #00BFFF;">Produtos Minecraft</h1> <!-- CSS Inline -->
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SECTION com GRID -->
+    <section class="jogos">
+        <div class="jogo">
+            <img src="https://gamepasslist.app/_ipx/f_webp,q_90/https://images.igdb.com/igdb/image/upload/t_cover_big/coa77e.png " alt="Minecraft Java">       
+            <h3>Minecraft Java Edition</h3>
+            <p>A versão clássica para PC, com mods e servidores personalizados. Perfeita para quem gosta de liberdade total.</p>
+        </div>
+
+        <div class="jogo">
+            <img src="https://image.winudf.com/v2/image1/Y29tLmJlZHJvY2tfbWNwZS5taW5lY2ZhdHBlLm1vZHMubWFzdGVyLmFkZG9uX2ljb25fMTY3ODQyMTk1OV8wNDY/icon.png?w=280&fakeurl=1" alt="Minecraft Bedrock">
+            <h3>Minecraft Bedrock Edition</h3>
+            <p>Disponível em várias plataformas (PC, consoles e mobile), com suporte a crossplay entre dispositivos.</p>
+        </div>
+
+        <div class="jogo">
+            <img src="https://image.api.playstation.com/gs2-sec/appkgo/prod/CUSA18779_00/4/i_c7b0467e8d83d7fa53d63d40a50e65e5da0edc39e07306e356cf5a6f2aba1977/i/icon0.png?w=440" alt="Minecraft Dungeons">
+            <h3>Minecraft Dungeons</h3>
+            <p>Um RPG de ação no estilo dungeon crawler, inspirado em clássicos de exploração e combate cooperativo.</p>
+        </div>
+
+        <div class="jogo">
+            <img src="https://media.vandal.net/i/1440x1080/4-2023/20234141140827_1.jpg" alt="Minecraft Legends">  
+            <h3>Minecraft Legends</h3>
+            <p>Jogo de estratégia em tempo real, onde você lidera exércitos para defender o Overworld dos Piglins.</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Minecraft FanSite - Projeto acadêmico</p>
+    </footer>
+</body>
+</html>

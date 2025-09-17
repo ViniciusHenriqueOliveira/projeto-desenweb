@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Minecraft FanSite</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- CSS Interno para o formulário -->
+    <style>
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            background: #2b2b2b;
+            padding: 20px;
+            border-radius: 12px;
+            border: 2px solid #4CAF50;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-size: 12px;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 8px;
+            border: 2px solid #4CAF50;
+            border-radius: 6px;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 12px;
+        }
+
+        .botoes {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 12px;
+        }
+
+        button:hover {
+            background: #2e7d32;
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <h1 style="color: #FF4500;">Contato</h1> <!-- CSS Inline -->
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SECTION com formulário -->
+    <section>
+        <h2 style="text-align:center;">Fale Conosco</h2>
+        <form action="#" method="get">
+            <!-- Campo texto -->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required minlength="3">
+
+            <!-- Campo email -->
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+
+            <!-- Campo telefone -->
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+
+            <!-- Select -->
+            <label for="assunto">Assunto:</label>
+            <select id="assunto" name="assunto" required>
+                <option value="">Selecione...</option>
+                <option value="duvidas">Dúvidas</option>
+                <option value="suporte">Suporte</option>
+                <option value="parcerias">Parcerias</option>
+            </select>
+
+            <p>Você joga Minecraft?</p>
+            <div class="radio-group">
+                <input type="radio" id="sim" name="jogador" value="sim" required>
+                <label for="sim">Sim</label>
+
+                <input type="radio" id="nao" name="jogador" value="nao">
+                <label for="nao">Não</label>
+            </div>
+
+            <!-- Checkbox -->
+            <p>Plataformas que você joga:</p>
+            <div class="checkbox-group">
+                <input type="checkbox" id="pc" name="plataforma" value="pc">
+                <label for="pc">PC</label>
+
+                <input type="checkbox" id="console" name="plataforma" value="console">
+                <label for="console">Console</label>
+
+                <input type="checkbox" id="mobile" name="plataforma" value="mobile">
+                <label for="mobile">Mobile</label>
+            </div>
+
+            <!-- Textarea -->
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem..." required minlength="10"></textarea>
+
+            <!-- Botões -->
+            <div class="botoes">
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Minecraft FanSite - Projeto acadêmico</p>
+    </footer>
+</body>
+</html>
